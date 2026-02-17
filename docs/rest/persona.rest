@@ -1,14 +1,38 @@
 GET http://127.0.0.1:8000/api/persona
 Accept: application/json
-Authorization: Bearer 1|e87rJjcfID00SLngrPun72JIPKd36BpyOTsdxCnq057b43a1
+Authorization: Bearer 1|xZeNy9ysh1Mwg7qVYOwdJ1ywxmbENWKLxzJdDruw8fe05a8e
 
 ### Guardar
 POST  http://127.0.0.1:8000/api/persona
 Accept: application/json
 Content-Type: application/json
-Authorization: Bearer 1|e87rJjcfID00SLngrPun72JIPKd36BpyOTsdxCnq057b43a1
+Authorization: Bearer 1|xZeNy9ysh1Mwg7qVYOwdJ1ywxmbENWKLxzJdDruw8fe05a8e
 
 {
     "nombres": "Ana",
     "apellidos": "Prueba2"
+}
+
+### guardar persona + user
+POST  http://127.0.0.1:8000/api/persona/guardar-persona-user
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 1|xZeNy9ysh1Mwg7qVYOwdJ1ywxmbENWKLxzJdDruw8fe05a8e
+
+{
+    "nombres": "David",
+    "apellidos": "ApUno",
+    "email": "david@mail.com",
+    "password": "david54321"
+}
+
+### asignar cuenta de usuario a persona
+POST  http://127.0.0.1:8000/api/persona/1/adduser
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 1|xZeNy9ysh1Mwg7qVYOwdJ1ywxmbENWKLxzJdDruw8fe05a8e
+
+{
+    "email": "ana@mail.com",
+    "password": "ana54321"
 }

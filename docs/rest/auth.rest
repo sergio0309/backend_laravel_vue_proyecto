@@ -11,9 +11,9 @@ Content-Type: application/json
 ### perfil
 GET http://127.0.0.1:8000/api/v1/auth/profile
 Accept: application/json
-Authorization: Bearer 1|e87rJjcfID00SLngrPun72JIPKd36BpyOTsdxCnq057b43a1
+Authorization: Bearer 1|xZeNy9ysh1Mwg7qVYOwdJ1ywxmbENWKLxzJdDruw8fe05a8e
 
 ### salir
 POST http://127.0.0.1:8000/api/v1/auth/logout
 Accept: application/json
-Authorization: Bearer 1|e87rJjcfID00SLngrPun72JIPKd36BpyOTsdxCnq057b43a1
+Authorization: Bearer 1|xZeNy9ysh1Mwg7qVYOwdJ1ywxmbENWKLxzJdDruw8fe05a8e

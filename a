@@ -1,0 +1,33 @@
+[90m= [39m[
+    {#6092
+      +"[1mid[22m": [35m1[39m,
+      +"[1mname[22m": "[32mAdmin[39m",
+      +"[1memail[22m": "[32madmin@mail.com[39m",
+      +"[1memail_verified_at[22m": [36mnull[39m,
+      +"[1mpassword[22m": "[32m$2y$12$8nEVE7z1Rkrvhmor.i9eGOf1eC2KzZoJZiETxw2WcRv.SbVot6koG[39m",
+      +"[1mremember_token[22m": [36mnull[39m,
+      +"[1mcreated_at[22m": "[32m2026-02-17 01:29:49[39m",
+      +"[1mupdated_at[22m": "[32m2026-02-17 01:29:49[39m",
+    },
+    {#6094
+      +"[1mid[22m": [35m2[39m,
+      +"[1mname[22m": "[32mJose Gerente[39m",
+      +"[1memail[22m": "[32mjose@mail.com[39m",
+      +"[1memail_verified_at[22m": [36mnull[39m,
+      +"[1mpassword[22m": "[32m$2y$12$3bvsmDSt8ghukp/ytw/yueto6VUf9YHxCWawFtlmHAEjNJ0treZg2[39m",
+      +"[1mremember_token[22m": [36mnull[39m,
+      +"[1mcreated_at[22m": "[32m2026-02-17 01:29:50[39m",
+      +"[1mupdated_at[22m": "[32m2026-02-17 01:29:50[39m",
+    },
+    {#6095
+      +"[1mid[22m": [35m3[39m,
+      +"[1mname[22m": "[32mPedro Cajero[39m",
+      +"[1memail[22m": "[32mpedro@mail.com[39m",
+      +"[1memail_verified_at[22m": [36mnull[39m,
+      +"[1mpassword[22m": "[32m$2y$12$ZsmABFXecgvLJcEU.6GrIuslTdyos7qgWmj9LE9J/BLY8j0i5f1.q[39m",
+      +"[1mremember_token[22m": [36mnull[39m,
+      +"[1mcreated_at[22m": "[32m2026-02-17 01:29:50[39m",
+      +"[1mupdated_at[22m": "[32m2026-02-17 01:29:50[39m",
+    },
+  ]
+
