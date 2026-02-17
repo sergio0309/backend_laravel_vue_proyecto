@@ -1,17 +1,18 @@
 ### Listado
 GET http://127.0.0.1:8000/api/user
 Accept: application/json
-Authorization: Bearer 9|ifuHdPV0THCO30KaXPd2Jv50ytOu9Ju0qWbIruwd3c9970a0
+Authorization: Bearer 1|sUE7oV26i6VNpxzMtZqzlCd9ORce7XkvOhDqMUMZ3041f6ac
 
 ### Guardar
 POST http://127.0.0.1:8000/api/user
 Accept: application/json
 Content-Type: application/json
+Authorization: Bearer 1|sUE7oV26i6VNpxzMtZqzlCd9ORce7XkvOhDqMUMZ3041f6ac
 
 {
-    "name": "juan",
-    "email": "juan@mail.com",
-    "password": "juan54321"
+    "name": "sergio",
+    "email": "sergio@mail.com",
+    "password": "sergio54321"
 }
 
 ### Mostrar

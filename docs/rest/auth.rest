@@ -4,16 +4,16 @@ Accept: application/json
 Content-Type: application/json
 
 {
-    "email": "sergio@mail.com",
-    "password": "sergio54321"
+    "email": "admin@mail.com",
+    "password": "admin54321"
 }
 
 ### perfil
 GET http://127.0.0.1:8000/api/v1/auth/profile
 Accept: application/json
-Authorization: Bearer 9|ifuHdPV0THCO30KaXPd2Jv50ytOu9Ju0qWbIruwd3c9970a0
+Authorization: Bearer 1|e87rJjcfID00SLngrPun72JIPKd36BpyOTsdxCnq057b43a1
 
 ### salir
 POST http://127.0.0.1:8000/api/v1/auth/logout
 Accept: application/json
-Authorization: Bearer 9|ifuHdPV0THCO30KaXPd2Jv50ytOu9Ju0qWbIruwd3c9970a0
+Authorization: Bearer 1|e87rJjcfID00SLngrPun72JIPKd36BpyOTsdxCnq057b43a1
