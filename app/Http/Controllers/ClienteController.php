@@ -21,8 +21,22 @@ class ClienteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            "nombre_completo" => "required"
+        ]);
+
+        $cliente = new Cliente();
+        $cliente->nombre_completo = $request->nombre_completo;
+        $cliente->ci_nit = $request->ci_nit;
+        $cliente->telefono = $request->telefono;
+        $cliente->direccion = $request->direccion;
+        $cliente->correo = $request->correo;
+        $cliente->save();
+
+        return response()->json(["mensaje" => "Cliente Registrado", "cliente" => $cliente], 201);
     }
+
+
 
     /**
      * Display the specified resource.
