@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string("nombre", 200);
             $table->integer("stock")->default(0)->nullable();
             $table->decimal("precio", 12,2)->nullable();
-            $table->string("imagen", 12,2)->nullable();
+            $table->string("imagen")->nullable();
             $table->text("descripcion")->nullable();
             $table->boolean("estado")->default(true);
             $table->bigInteger("categoria_id")->unsigned();

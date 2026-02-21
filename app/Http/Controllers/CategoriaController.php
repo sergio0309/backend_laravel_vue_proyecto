@@ -33,7 +33,7 @@ class CategoriaController extends Controller
             $categoria = new Categoria();
             $categoria->nombre = $request->nombre;
             $categoria->detalle = $request->detalle;
-            $categoria->estado = $request->estado;
+            // $categoria->estado = $request->estado;
             $categoria->save();
             return response()->json(["message" => "Categoria Registrada"], 201);
         } catch (\Exception $e) {

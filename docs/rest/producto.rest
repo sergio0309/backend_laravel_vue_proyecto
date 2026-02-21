@@ -1,0 +1,18 @@
+GET http://127.0.0.1:8000/api/producto?page=1&limit=2&q=
+Authorization: Bearer 1|FEYXPYRcniocDw8kiUGJD4zXbdi6fiZXxzZPniADfbbe3d5a
+
+### Guardar
+POST http://127.0.0.1:8000/api/producto
+Authorization: Bearer 1|FEYXPYRcniocDw8kiUGJD4zXbdi6fiZXxzZPniADfbbe3d5a
+Content-Type: application/json
+Accept: application/json
+
+{
+    "nombre": "computadora",
+    "categoria_id": 1
+}
+
+### mostrar
+GET http://127.0.0.1:8000/api/producto/1
+Accept: application/json
+Authorization: Bearer 1|FEYXPYRcniocDw8kiUGJD4zXbdi6fiZXxzZPniADfbbe3d5a
