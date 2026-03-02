@@ -1,0 +1,13 @@
+POST  http://127.0.0.1:8000/api/pedido
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 2|qjPVSoREydw6lRu7G29m96QmnRZJRQRf0UJ4Fzj09f0e23c8
+
+{
+    "cliente_id": 1,
+    "productos": [
+        { "id": 1,"cantidad": 5 },
+        { "id": 2,"cantidad": 25 },
+        { "id": 3,"cantidad": 15 }
+    ]
+}

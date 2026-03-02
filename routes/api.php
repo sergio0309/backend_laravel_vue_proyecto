@@ -20,6 +20,9 @@ Route::get('/user', function (Request $request) {
 
 Route::middleware('auth:sanctum')->group(function(){
 
+    // busqueda cliente
+    Route::get("/cliente/buscar", [ClienteController::class, "buscaCliente"]);
+
     // registrar persona con cuenta usuario
     Route::post("/persona/guardar-persona-user", [PersonaController::class, "funGuardarPersonaUser"]);
 

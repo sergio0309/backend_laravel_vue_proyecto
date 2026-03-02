@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('pedido_producto', function (Blueprint $table) {
             $table->id();
             $table->integer("cantidad")->default(1);
-            $table->unsignedBigInteger("produco_id");
+            $table->unsignedBigInteger("producto_id");
             $table->unsignedBigInteger("pedido_id");
-            $table->foreign("produco_id")->references("id")->on("productos");
+            $table->foreign("producto_id")->references("id")->on("productos");
             $table->foreign("pedido_id")->references("id")->on("pedidos");
             $table->timestamps();
         });
