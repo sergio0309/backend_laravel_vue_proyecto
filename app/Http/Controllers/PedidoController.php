@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Cliente;
 use App\Models\Pedido;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -78,6 +79,15 @@ class PedidoController extends Controller
 
         return response()->json(["mensaje" => "Pedido registado"]);
 
+    }
+
+
+    public function funReportePDF($id)
+    {
+        $pedido = Pedido::with(["cliente", "productos"])->find($id);
+
+        $pdf = Pdf::loadView('pdf.pedidos', ["pedido" => $pedido]);
+        return $pdf->download('pedidos.pdf');
     }
 
     /**

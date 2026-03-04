@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\ProductosExport;
 use App\Models\Producto;
 use Illuminate\Http\Request;
+use Maatwebsite\Excel\Facades\Excel;
 
 class ProductosController extends Controller
 {
@@ -117,5 +119,9 @@ class ProductosController extends Controller
         } else{
             return response()->json(["mensaje" => "La imagen es obligatoria"], 422);
         }
+    }
+
+    public function exportarExcel(){
+        return Excel::download(new ProductosExport, 'productos.xlsx');
     }
 }

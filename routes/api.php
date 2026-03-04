@@ -17,6 +17,8 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
+Route::get("/pedido/{id}/pdf/list", [PedidoController::class, "funReportePDF"]);
+Route::get("/producto/exportarExcel", [ProductosController::class,"exportarExcel"]);
 
 Route::middleware('auth:sanctum')->group(function(){
 
